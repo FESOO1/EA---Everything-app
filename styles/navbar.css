@@ -151,9 +151,9 @@
     left: 0;
     transform: translateY(-50%);
     position: absolute;
-    border-top: 1.1vw solid transparent;
-    border-left: 0.1vw solid orangered;
-    border-bottom: 1.1vw solid transparent;
+    border-top: 18px solid transparent;
+    border-left: 1px solid orangered;
+    border-bottom: 18px solid transparent;
 }
 
 .navbar-middle-link-active::after {
@@ -283,4 +283,9 @@
     .navbar-top-menu {
         display: flex;
     }
+    /* .navbar-middle-link-active::before {
+        border-top: 1.3vw solid transparent;
+        border-left: 0.15vw solid orangered;
+        border-bottom: 1.3vw solid transparent;
+    } */
 }
