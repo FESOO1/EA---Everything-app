@@ -161,9 +161,9 @@ body {
 
 .navbar-bottom-link-active::after {
     content: '';
-    width: 50px;
-    height: 10px;
-    background-color: rgba(255, 68, 0, 1);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 51, 0);
     position: absolute;
     top: 50%;
     left: 0;
