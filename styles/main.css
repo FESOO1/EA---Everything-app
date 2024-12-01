@@ -111,7 +111,7 @@ body {
 .navbar-bottom-links {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 6px;
 }
 
 .navbar-bottom-link {
@@ -120,7 +120,7 @@ body {
     align-items: center;
     column-gap: 12px;
     padding-left: 13px;
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
     text-decoration: none;
     font-family: var(--f-inter);
 }

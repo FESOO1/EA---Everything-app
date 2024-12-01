@@ -1,4 +1,5 @@
 const menuButton = document.querySelector('.navbar-top-menu');
+const navbarLinkItself = document.querySelectorAll('.navbar-bottom-link');
 let isNavbarOpen = false;
 
 // NAVBAR FUNCTION
@@ -13,6 +14,21 @@ function navbarFunction() {
 
         isNavbarOpen = false;
     };
+};
+
+// NAVBAR LINKS FUNCTION
+
+for (let i = 0; i < navbarLinkItself.length; i++) {
+    // MOUSELEAVE
+    navbarLinkItself[i].addEventListener('mouseleave', () => {
+        navbarLinkItself[i].classList.remove('navbar-bottom-link-hover');
+    });
+    // MOUSEENTER
+    navbarLinkItself[i].addEventListener('mouseenter', () => {
+        if (!navbarLinkItself[i].classList.contains('navbar-bottom-link-active')) {
+            navbarLinkItself[i].classList.add('navbar-bottom-link-hover');
+        };
+    });
 };
 
 // INITIALIZING BUTTONS
