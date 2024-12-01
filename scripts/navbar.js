@@ -1,4 +1,5 @@
 const menuButton = document.querySelector('.navbar-top-menu');
+const navbar = document.querySelector('.navbar');
 const navbarLinkItself = document.querySelectorAll('.navbar-middle-link');
 let isNavbarOpen = false;
 
@@ -7,10 +8,12 @@ let isNavbarOpen = false;
 function navbarFunction() {
     if (isNavbarOpen === false) {
         menuButton.classList.add('navbar-top-menu-js');
+        navbar.classList.add('navbar-js');
         
         isNavbarOpen = true;
     } else {
         menuButton.classList.remove('navbar-top-menu-js');
+        navbar.classList.remove('navbar-js');
 
         isNavbarOpen = false;
     };
