@@ -126,10 +126,10 @@ body {
 }
 
 .navbar-bottom-link-svg {
-    color: rgb(180, 180, 180);
+    color: rgb(150, 150, 150);
     width: 18px;
     height: 18px;
-    transition: color 300ms;
+    transition: color 200ms;
 }
 
 .navbar-bottom-link-text {
