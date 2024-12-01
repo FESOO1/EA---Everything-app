@@ -129,6 +129,7 @@ body {
     color: rgb(180, 180, 180);
     width: 18px;
     height: 18px;
+    transition: color 300ms;
 }
 
 .navbar-bottom-link-text {
@@ -137,9 +138,22 @@ body {
     font-size: 0.95rem;
 }
 
+.navbar-bottom-link-hover {
+    background-color: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.navbar-bottom-link-hover .navbar-bottom-link-svg {
+    color: white;
+}
+
+/* NAVBAR BOTTOM LINK ACTIVE */
+
 .navbar-bottom-link-active {
     background-color: rgba(255,255,255,0.05);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: relative;
     overflow: hidden;
 }
