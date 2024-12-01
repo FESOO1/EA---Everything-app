@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+:root {
+    --f-inter: "Inter", sans-serif;
+    --f-k2d: "K2D", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0c0b;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+}
+
+/* NAVBAR TOP */
+
+.navbar-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+}
+
+/* NAVBAR TOP LOGO */
+
+.navbar-top-logo {
+    text-decoration: none;
+}
+
+.navbar-top-logo-text {
+    font-family: var(--f-k2d);
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* NAVBAR TOP MENU */
+
+.navbar-top-menu {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbar-top-menu * {
+    position: absolute;
+    transition: transform 300ms, height 300ms;
+}
+
+.navbar-top-menu-top {
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-4px);
+}
+
+.navbar-top-menu-bottom {
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(4px);
+}
+
+.navbar-top-menu:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.navbar-top-menu-js .navbar-top-menu-top {
+    transform: translateY(0) rotateZ(45deg);
+    height: 1.5px;
+}
+
+.navbar-top-menu-js .navbar-top-menu-bottom {
+    transform: translateY(0) rotateZ(-45deg);
+    height: 1.5px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+/* MAIN CONTENT NAVBAR */
+
+/* .main-content-navbar {
+} */
+
+/* MAIN CONTENT ITSELF */
+
+.main-content-itself {
+    height: 100vh;
+    padding: 10px;
+    padding-left: 0;
+}
+
+/* MAIN CONTENT ITSELF INNER */
+
+.main-content-itself-inner {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 0.5rem;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.main-content-itself-inner::-webkit-scrollbar {
+    display: none;
+}
