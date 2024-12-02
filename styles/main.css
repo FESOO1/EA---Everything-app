@@ -3,7 +3,7 @@
 .main-content-itself-inner-home {
     display: flex;
     flex-direction: column;
-    padding-inline: 20px;
+    padding-inline: 30px;
 }
 
 /* HOME DIVIDER */
@@ -46,7 +46,7 @@
     padding-block: 25px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 25px;
 }
 
 /* HOME BEST ITSELF */
@@ -73,7 +73,7 @@
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 2px;
     transition: background-color 300ms;
 }
 
@@ -93,17 +93,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: 5px;
+    padding: 5px 8px;
 }
 
 .main-content-itself-inner-home-best-itself-inner-name {
-    color: white;
+    color: rgb(200, 200, 200);
     font-weight: 400;
-    padding-left: 5px;
+    transition: color 300ms;
+}
+
+.main-content-itself-inner-home-best-itself-inner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-content-itself-inner-home-best-itself-inner-link-svg {
+    color: rgb(200, 200, 200);
+    width: 22px;
+    height: 22px;
+    transform: translateX(-20px) translateY(20px);
+    transition: color 300ms, transform 300ms;
 }
 
 /* HOME BEST ITSELF LINK STATES */
 
 .main-content-itself-inner-home-best-itself-inner:hover {
     background-color: rgba(255,255,255,0.05);
+}
+
+.main-content-itself-inner-home-best-itself-inner:hover .main-content-itself-inner-home-best-itself-inner-link-svg {
+    color: white;
+    transform: translateX(0) translateY(0);
+}
+
+.main-content-itself-inner-home-best-itself-inner:hover .main-content-itself-inner-home-best-itself-inner-name {
+    color: white;
 }
