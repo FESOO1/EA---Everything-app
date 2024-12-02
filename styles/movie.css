@@ -3,6 +3,7 @@
 .main-content-itself-inner-movie {
     display: flex;
     flex-direction: column;
+    padding-inline: 40px;
 }
 
 /* MOVIE INPUT */
@@ -64,3 +65,64 @@
 }
 
 /* MOVIE OUTPUT */
+
+.main-content-itself-inner-movie-output {
+    padding-block: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* MOVIE OUTPUT ITSELF */
+
+.main-content-itself-inner-movie-output-itself {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.02);
+    border-radius: 0.4rem;
+    border: 1px solid rgba(255,255,255,0.02);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-decoration: none;
+    font-family: var(--f-inter);
+    transition: background-color 200ms;
+}
+
+.main-content-itself-inner-movie-output-itself-image {
+    width: 100%;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.main-content-itself-inner-movie-output-itself-image-itself {
+    width: 100%;
+    transition: scale 200ms;
+}
+
+.main-content-itself-inner-movie-output-itself-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.main-content-itself-inner-movie-output-itself-info-name {
+    color: white;
+    font-weight: 600;
+}
+
+.main-content-itself-inner-movie-output-itself-info-rating {
+    color: white;
+    font-weight: 400;
+}
+
+/* MOVIE OUTPUT ITSELF STATES */
+
+.main-content-itself-inner-movie-output-itself:hover {
+    background-color: rgba(255,255,255,0.04);
+}
+
+.main-content-itself-inner-movie-output-itself:hover .main-content-itself-inner-movie-output-itself-image-itself {
+    scale: 1.1;
+}
