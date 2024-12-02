@@ -1,5 +1,66 @@
 /* MOVIE CONTENT */
 
 .main-content-itself-inner-movie {
-    
+    display: flex;
+    flex-direction: column;
 }
+
+/* MOVIE INPUT */
+
+.main-content-itself-inner-movie-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    padding-block: 40px;
+}
+
+.main-content-itself-inner-movie-input-header {
+    color: white;
+    font-family: var(--f-inter);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.main-content-itself-inner-movie-input-container {
+    width: 750px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.03);
+    transition: background-color 200ms;
+}
+
+.main-content-itself-inner-movie-input-itself {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    padding-inline: 15px;
+}
+
+.main-content-itself-inner-movie-input-itself-svg-container {
+    padding-inline: 13px;
+    display: flex;
+    align-items: center;
+    cursor: text;
+}
+
+.main-content-itself-inner-movie-input-itself-svg {
+    color: rgb(200,200,200);
+    transition: color 200ms;
+}
+
+.main-content-itself-inner-movie-input-container:focus-within .main-content-itself-inner-movie-input-itself-svg {
+    color: white;
+}
+
+.main-content-itself-inner-movie-input-container:focus-within {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* MOVIE OUTPUT */
