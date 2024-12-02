@@ -1,75 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* CONTENT HOME */
 
-
-:root {
-    --f-inter: "Inter", sans-serif;
-    --f-k2d: "K2D", sans-serif;
+.main-content-itself-inner-home {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* HOME DIVIDER */
+
+.main-content-itself-inner-home-divider {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-body {
-    background-color: #0f0c0b;
+/* HOME HEADER */
+
+.main-content-itself-inner-home-header {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    font-family: var(--f-inter);
 }
 
-/* MAIN CONTENT */
+.main-content-itself-inner-home-header-itself {
+    color: white;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
 
-.main-content {
-    width: 100%;
-    height: 100vh;
+.main-content-itself-inner-home-header-paragraph {
+    width: 700px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* HOME MOVIE, TV SHOW, AND SERIES OF THE DAY */
+
+.main-content-itself-inner-home-best {
+    padding-block: 25px;
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-/* MAIN CONTENT NAVBAR */
+/* HOME BEST ITSELF */
 
-/* .main-content-navbar {
-} */
-
-/* MAIN CONTENT ITSELF */
-
-.main-content-itself {
-    height: 100vh;
-    padding: 10px;
-    padding-left: 0;
+.main-content-itself-inner-home-best-itself {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: var(--f-inter);
 }
 
-/* MAIN CONTENT ITSELF INNER */
+.main-content-itself-inner-home-best-itself-text {
+    color: white;
+    font-weight: 400;
+}
 
-.main-content-itself-inner {
+/* HOME BEST ITSELF LINK */
+
+.main-content-itself-inner-home-best-itself-inner {
+    text-decoration: none;
+    padding: 6px;
+    background-color: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    transition: background-color 300ms;
+}
+
+.main-content-itself-inner-home-best-itself-inner-image {
     width: 100%;
-    height: 100%;
+    line-height: 0;
     border: 1px solid rgba(255,255,255,0.05);
     border-radius: 0.5rem;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
-.main-content-itself-inner::-webkit-scrollbar {
-    display: none;
+.main-content-itself-inner-home-best-itself-inner-image-itself {
+    width: 100%;
 }
 
-/* MEDIA QUERIES */
+.main-content-itself-inner-home-best-itself-inner-name-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 5px;
+}
 
-@media (max-width: 1200px) {
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .main-content-navbar {
-        height: 56px;
-    }
-    .main-content-itself {
-        height: auto;
-        padding: 0;
-    }
-    .main-content-itself-inner {
-        border: 0;
-    }
+.main-content-itself-inner-home-best-itself-inner-name {
+    color: white;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+/* HOME BEST ITSELF LINK STATES */
+
+.main-content-itself-inner-home-best-itself-inner:hover {
+    background-color: rgba(255,255,255,0.05);
 }
