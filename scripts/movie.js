@@ -16,17 +16,9 @@ async function displayTheData() {
         const response = await fetch(`http://www.omdbapi.com/?i=${movieSelected[i]}&apikey=1512de31`);
         const movieData = await response.json();
         // USING THE FETCHED DATA
-        outputContainer.innerHTML += `
-            <a href="" class="main-content-itself-inner-movie-output-itself">
-                <div class="main-content-itself-inner-movie-output-itself-image">
-                    <img src="${movieData.Poster}" class="main-content-itself-inner-movie-output-itself-image-itself">
-                </div>
-                <div class="main-content-itself-inner-movie-output-itself-info">
-                    <h3 class="main-content-itself-inner-movie-output-itself-info-name">${movieData.Title}</h3>
-                    <h4 class="main-content-itself-inner-movie-output-itself-info-rating">${movieData.Ratings[0].Value}</h4>
-                </div>
-            </a>
-        `;
+        outputItselfImage[i].src = movieData.Poster;
+        outputItselfName[i].textContent = movieData.Title;
+        outputItselfRating[i].textContent = movieData.Ratings[0].Value;
     };
 };
 
@@ -34,6 +26,16 @@ async function displayTheData() {
 async function  searchMovie() {
     const response = await fetch(`https://www.omdbapi.com/?t=${movieInput.value}&apikey=1512de31`);
     const movieData = await response.json();
+
+    outputItself.forEach(output => {
+        if (output.textContent.includes(movieInput.value)) {
+            output.classList.add('main-content-itself-inner-movie-output-itself-shown');
+            output.classList.remove('main-content-itself-inner-movie-output-itself-hidden');
+        } else {
+            output.classList.add('main-content-itself-inner-movie-output-itself-hidden');
+            output.classList.remove('main-content-itself-inner-movie-output-itself-shown');
+        };
+    });
 }
 
 // INITIALIZING BUTTONS
