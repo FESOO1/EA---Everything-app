@@ -250,7 +250,7 @@
 
 .navbar-js {
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     background-color: rgba(0, 0, 0, 0.80);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -272,6 +272,7 @@
     }
     .navbar {
         width: 100%;
+        height: 56px;
     }
     .navbar-top {
         height: 56px;

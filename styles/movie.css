@@ -76,21 +76,22 @@
 /* MOVIE OUTPUT ITSELF */
 
 .main-content-itself-inner-movie-output-itself {
-    padding: 10px;
+    padding: 6px;
     background-color: rgba(255,255,255,0.02);
     border-radius: 0.4rem;
     border: 1px solid rgba(255,255,255,0.02);
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 5px;
     text-decoration: none;
     font-family: var(--f-inter);
-    transition: background-color 200ms;
+    transition: background-color 200ms, border 200ms;
 }
 
 .main-content-itself-inner-movie-output-itself-image {
     width: 100%;
     border-radius: 0.2rem;
+    border: 1px solid rgba(255,255,255,0.05);
     overflow: hidden;
     line-height: 0;
 }
@@ -105,6 +106,7 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 20px;
+    padding: 5px;
 }
 
 .main-content-itself-inner-movie-output-itself-info-name {
@@ -121,6 +123,7 @@
 
 .main-content-itself-inner-movie-output-itself:hover {
     background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .main-content-itself-inner-movie-output-itself:hover .main-content-itself-inner-movie-output-itself-image-itself {
