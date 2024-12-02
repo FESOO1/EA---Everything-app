@@ -3,7 +3,7 @@
 .main-content-itself-inner-movie {
     display: flex;
     flex-direction: column;
-    padding-inline: 40px;
+    padding-inline: 30px;
 }
 
 /* MOVIE INPUT */
@@ -76,9 +76,10 @@
 /* MOVIE OUTPUT ITSELF */
 
 .main-content-itself-inner-movie-output-itself {
+    height: max-content;
     padding: 6px;
     background-color: rgba(255,255,255,0.02);
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
     border: 1px solid rgba(255,255,255,0.02);
     display: flex;
     flex-direction: column;
@@ -88,9 +89,17 @@
     transition: background-color 200ms, border 200ms;
 }
 
+.main-content-itself-inner-movie-output-itself-hidden {
+    display: none;
+}
+
+.main-content-itself-inner-movie-output-itself-shown {
+    display: flex;
+}
+
 .main-content-itself-inner-movie-output-itself-image {
     width: 100%;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
     border: 1px solid rgba(255,255,255,0.05);
     overflow: hidden;
     line-height: 0;
@@ -98,6 +107,7 @@
 
 .main-content-itself-inner-movie-output-itself-image-itself {
     width: 100%;
+    object-fit: cover;
     transition: scale 200ms;
 }
 
